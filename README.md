@@ -64,12 +64,22 @@ Y= A⊕B
 
 **PROGRAM**
 
-<img width="283" height="271" alt="image" src="https://github.com/user-attachments/assets/99002088-ef51-4cb4-b809-608537b9d8b8" />
 
 
 Program for logic gates and verify its truth table in quartus using Verilog programming
 ~~~
-\
+module basic_gates(
+input a,b,
+output y0,y1,y2,y3,y4,y5
+);
+and g0(y0,a,b);
+or(y1,a,b);
+not(y2,a);
+nand(y3,a,b);
+nor(y4,a,b);
+xor(y5,a,b);
+endmodule
+
 ~~~
 
  Developed by:KAVINKUMAR R
