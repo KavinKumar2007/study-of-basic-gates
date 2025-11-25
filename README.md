@@ -73,11 +73,11 @@ input a,b,
 output y0,y1,y2,y3,y4,y5
 );
 and g0(y0,a,b);
-or(y1,a,b);
-not(y2,a);
-nand(y3,a,b);
-nor(y4,a,b);
-xor(y5,a,b);
+or g1(y1,a,b);
+not g2(y2,a);
+nand g3(y3,a,b);
+nor g4(y4,a,b);
+xor g5(y5,a,b);
 endmodule
 
 ~~~
